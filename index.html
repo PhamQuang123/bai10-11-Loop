@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="game()">Play Game</button>
+<!--<script>-->
+<!--    let check = 0;-->
+<!--    let asc = 0;-->
+<!--    let a = +prompt("Nhập số lượng số nguyên tố cần in: ");-->
+<!--    let j = 2-->
+<!--    while (j >= 2) {-->
+
+<!--        if (asc == a) {-->
+<!--            break;-->
+<!--        }-->
+<!--        for (let i = 2; i < j; i++) {-->
+<!--            if (j % i == 0) {-->
+<!--                check++;-->
+<!--            }-->
+<!--        }-->
+<!--        if (check == 0) {-->
+<!--            asc++;-->
+<!--            console.log(j)-->
+
+<!--        } else {-->
+<!--            check = 0;-->
+<!--        }-->
+<!--        j++-->
+<!--    }-->
+<!--</script>-->
+<!--// BÀi 6 tổng 30 số ầu tin chia hết cho 7-->
+<!--<script>-->
+<!--    let isExist = 0;-->
+<!--    let sum = 0;-->
+<!--    let i = 7-->
+<!--    while (i >= 7) {-->
+<!--        if (i % 7 == 0) {-->
+<!--            isExist++;-->
+<!--            sum += i;-->
+<!--        }-->
+<!--        if (isExist == 30) {-->
+<!--            break;-->
+<!--        }-->
+<!--        i++;-->
+<!--    }-->
+<!--    console.log("Tổng 30 số đầu tiên chia hết cho 7 là: " + sum)-->
+<!--</script>-->
+<!--<script>-->
+<!--    function game() {-->
+<!--        let a = +prompt("Nhập số khoảng để đoán số từ 0 đến: ")-->
+<!--        let b = Math.floor(Math.random() * a);-->
+<!--        let count = 0;-->
+<!--        do {-->
+<!--            let c = +prompt("Nhập số muốn đoán: ")-->
+<!--            if (c == b){-->
+<!--                alert("Đoán đúng. Good");-->
+<!--                break;-->
+<!--            }else if (c > b){-->
+<!--                count++;-->
+<!--                alert("số  đoán lớn hơn")-->
+<!--            }else   {-->
+<!--                count++-->
+<!--                alert("số đoán nhỏ hơn")-->
+<!--            }-->
+<!--            if (count == 3){-->
+<!--                alert("Đã hết lượt đoán")-->
+<!--                break;-->
+<!--            }-->
+
+<!--        } while (true);-->
+<!--    }-->
+<!--</script>-->
+
+<!--Tích các số t a-b-->
+<!--<script>-->
+<!--    let a = +prompt("Nhập số a:")-->
+<!--    let b = +prompt("Nhập số b");-->
+<!--    let tich = 1;-->
+<!--    for (let i = a; i <= b ; i++) {-->
+<!--        tich *= i;-->
+<!--    }-->
+<!--    console.log("Tích từ a-b là: " + tich);-->
+<!--</script>-->
+
+<!--Tổng các số chia 5 dư 2 t a-b-->
+<!--<script>-->
+<!--    let a = +prompt("Nhập số a:")-->
+<!--    let b = +prompt("Nhập số b");-->
+<!--    let sum = 0;-->
+<!--    for (let i = a; i <= b ; i++) {-->
+<!--        if (i % 5 == 2){-->
+<!--            sum += i;-->
+<!--        }-->
+<!--    }-->
+<!--    console.log("Tổng cá số từ a-b chia cho 5 dư 2 là: " + sum)-->
+
+<!--</script>-->
+<script>
+    for (let i = 50; i >= 0 ; i -= 5) {
+        console.log(i);
+    }
+    console.log("Bảng cửu chương 5 là: ")
+
+    for (let i = 1; i < 11; i++) {
+        console.log("5"+ " x " + i + " = " + 5*i);
+    }
+</script>
+</body>
+
+</html>
