@@ -32,58 +32,58 @@
     //     j++
     // }
 
-// BÀi 6 tổng 30 số ầu tin chia hết cho 7
-//     let isExist = 0;
-//     let sum = 0;
-//     let i = 7
-//     while (i >= 7) {
-//         if (i % 7 == 0) {
-//             isExist++;
-//             sum += i;
-//         }
-//         if (isExist == 30) {
-//             break;
-//         }
-//         i++;
-//     }
-//     console.log("Tổng 30 số đầu tiên chia hết cho 7 là: " + sum)
+    // BÀi 6 tổng 30 số ầu tin chia hết cho 7
+    //     let isExist = 0;
+    //     let sum = 0;
+    //     let i = 7
+    //     while (i >= 7) {
+    //         if (i % 7 == 0) {
+    //             isExist++;
+    //             sum += i;
+    //         }
+    //         if (isExist == 30) {
+    //             break;
+    //         }
+    //         i++;
+    //     }
+    //     console.log("Tổng 30 số đầu tiên chia hết cho 7 là: " + sum)
 
-   // Game đoán số
-    function game() {
-        let a = +prompt("Nhập số khoảng để đoán số từ 0 đến: ")
-        let b = Math.floor(Math.random() * a);
-        let count = 0;
-        do {
-            let c = +prompt("Nhập số muốn đoán: ")
-            if (c == b){
-                alert("Đoán đúng. Good");
-                break;
-            }else if (c > b){
-                count++;
-                alert("số  đoán lớn hơn")
-            }else   {
-                count++
-                alert("số đoán nhỏ hơn")
-            }
-            if (count == 3){
-                alert("Đã hết lượt đoán")
-                break;
-            }
+    // Game đoán số
+    //  function game() {
+    //      let a = +prompt("Nhập số khoảng để đoán số từ 0 đến: ")
+    //      let b = Math.floor(Math.random() * a);
+    //      let count = 0;
+    //      do {
+    //          let c = +prompt("Nhập số muốn đoán: ")
+    //          if (c == b){
+    //              alert("Đoán đúng. Good");
+    //              break;
+    //          }else if (c > b){
+    //              count++;
+    //              alert("số  đoán lớn hơn")
+    //          }else   {
+    //              count++
+    //              alert("số đoán nhỏ hơn")
+    //          }
+    //          if (count == 3){
+    //              alert("Đã hết lượt đoán")
+    //              break;
+    //          }
+    //
+    //      } while (true);
+    //  }
 
-        } while (true);
-    }
-
-// Tích các số t a-b
-//     let a = +prompt("Nhập số a:")
-//     let b = +prompt("Nhập số b");
-//     let tich = 1;
-//     for (let i = a; i <= b ; i++) {
-//         tich *= i;
-//     }
-//     console.log("Tích từ a-b là: " + tich);
+    // Tích các số t a-b
+    //     let a = +prompt("Nhập số a:")
+    //     let b = +prompt("Nhập số b");
+    //     let tich = 1;
+    //     for (let i = a; i <= b ; i++) {
+    //         tich *= i;
+    //     }
+    //     console.log("Tích từ a-b là: " + tich);
 
 
-// Tổng các số chia 5 dư 2 t a-b
+    // Tổng các số chia 5 dư 2 t a-b
 
     // let a = +prompt("Nhập số a:")
     // let b = +prompt("Nhập số b");
@@ -104,6 +104,55 @@
     // for (let i = 1; i < 11; i++) {
     //     console.log("5"+ " x " + i + " = " + 5*i);
     // }
+// Chuyển str => arr
+//     let arr = ["red", "green", "white", "black"];
+//     console.log('"' + arr.join() + '"')
+
+// Thêm "-" va giữa 2 số chẵn liền kề nhau
+//     let a = prompt("Nhập số: ")
+//     let arr1 = a.split("");
+//     let newStr = "";
+//     console.log(arr1)
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] % 2 == 0 && arr1[i + 1] % 2 == 0) {
+//             arr1.splice(i + 1, 0, "-");
+//             i++;
+//         }
+//     }
+//     for (let i = 0; i < arr1.length; i++) {
+//         newStr += arr1[i];
+//     }
+//     console.log(newStr)
+
+    // Đổi chữ hoa thành thươnờng, chữ thường thành hoa trong chuỗi
+    // let str1 = prompt("Nhập chuỗi:")
+    // let arr2 = str1.split("");
+    // let newStr2 = "";
+    // console.log("Chuỗi ban đâu: " +str1)
+    // for (let i = 0; i < arr2.length; i++) {
+    //     if (arr2[i] == arr2[i].toUpperCase()){
+    //         arr2[i] = arr2[i].toLowerCase();
+    //     }else{
+    //         arr2[i] = arr2[i].toUpperCase();
+    //     }
+    //     newStr2 += arr2[i];
+    // }
+    // console.log(newStr2)
+
+    let text = "";
+    let number1= 1;
+    let number2 = 1;
+    let number3 = 0;
+text += number1 + "," + number2;
+        for (let i = 0; i < 18; i++) {
+            number3 = number1 + number2 ;
+            number1 = number2;
+            number2 = number3;
+            text += "," + number3 ;
+        }
+    console.log(text)
+    // Tic tac toe
+
 </script>
 </body>
 
